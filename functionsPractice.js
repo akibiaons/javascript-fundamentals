@@ -71,7 +71,7 @@ speak();
 // This empty function declatation does not print anything but the default parameter it was
 // -already set to print out... 
 // Adding in parameters when calling a function will override them.
-
+/*
 const calcArea = function(radius){
     return 3.14 * radius**2;
 };
@@ -98,3 +98,11 @@ calcVol(area);
 /*
 Below we will be looking at arrow functions
 */
+
+//Arrow function below...
+const calcArea = (radius) => {
+    return 3.14 * radius**2;
+};
+
+const area = calcArea(5);
+console.log('area is:', area);
