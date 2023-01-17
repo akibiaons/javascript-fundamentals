@@ -61,11 +61,40 @@ speak();
 /*
 However, you can give the parameters some default values...
 */
-
+/*
 const speak = function(name = 'luigi', time = 'night'){
     console.log(`Good ${time} ${name}.`)
 };
 
-speak(); // This empty function declatation does not print anything but the default parameter it was
+speak(); 
+*/
+// This empty function declatation does not print anything but the default parameter it was
 // -already set to print out... 
 // Adding in parameters when calling a function will override them.
+
+const calcArea = function(radius){
+    return 3.14 * radius**2;
+};
+
+const area = calcArea(5);
+console.log(area);
+/* 
+Over here we take the calcArea function and create 
+the radius of a circle or something, we take it out
+of it's block and can call it using the area variable
+now...
+*/
+
+// For example, we can take the area and now calculate the volume and pass in the value of area...
+/*
+const calcVol = function(area){
+
+};
+calcVol(area);
+*/
+// Above is an example of taking the value from area from the exercise below 
+// and passing it into another function below it...
+
+/*
+Below we will be looking at arrow functions
+*/
